@@ -1,5 +1,5 @@
 import { useDroppable } from '@dnd-kit/core';
-import type { Task } from '@/types/tasks';
+import { Task } from '../../../../types/tasks';
 import { TaskItem } from '../TaskItem/';
 import { ColumnTitle, DroppableArea, StyledColumn } from './styles';
 

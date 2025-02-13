@@ -1,5 +1,5 @@
-import { readTasks, writeTasks } from '@/db/tasks';
-import { Task } from '@/types/tasks';
+import { readTasks, writeTasks } from '../../../../db/tasks';
+import { Task } from '../../../../types/tasks';
 import { NextResponse } from 'next/server';
 
 export async function PUT(
@@ -7,7 +7,7 @@ export async function PUT(
   context: { params: { id: string } }
 ): Promise<NextResponse> {
   try {
-    const { id } = context.params;
+    const { id } = await context.params;
 
     const { status } = await request.json();
     const tasks: Task[] = await readTasks();
@@ -48,7 +48,7 @@ export async function DELETE(
   context: { params: { id: string } }
 ): Promise<NextResponse> {
   try {
-    const { id } = context.params;
+    const { id } = await context.params;
     const tasks: Task[] = await readTasks();
     const taskIndex = tasks.findIndex((task) => task.id === id);
 

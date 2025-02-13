@@ -1,7 +1,7 @@
 import { useMutation, useQueryClient } from '@tanstack/react-query';
 import { queryKeys } from './constants';
-import { TaskFormData } from '@/components/AddTaskModal/AddTaskModal';
-import { Task } from '@/types/tasks';
+import { TaskFormData } from '../../../components/AddTaskModal/AddTaskModal';
+import { ApiResponse, Task } from '../../../types/tasks';
 
 export const useCreateTask = () => {
   const queryClient = useQueryClient();
@@ -10,7 +10,7 @@ export const useCreateTask = () => {
     mutate: addTask,
     isPending: isCreating,
     error: createTaskError,
-  } = useMutation<Task, Error, TaskFormData>({
+  } = useMutation<ApiResponse<Task>, Error, TaskFormData>({
     mutationFn: async (taskData) => {
       const response = await fetch('/api/tasks', {
         method: 'POST',

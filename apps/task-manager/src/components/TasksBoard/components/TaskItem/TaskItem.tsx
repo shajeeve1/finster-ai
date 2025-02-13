@@ -2,8 +2,8 @@ import React from 'react';
 import { Typography, IconButton, Card, Box } from '@mui/material';
 import { Delete as DeleteIcon } from '@mui/icons-material';
 import { useDraggable } from '@dnd-kit/core';
-import type { Task } from '@/types/tasks';
-import { useDeleteTask } from '@/hooks/queries/tasks';
+import { Task } from '../../../../types/tasks';
+import { useDeleteTask } from '../../../../hooks/queries/tasks/useDeleteTask';
 
 interface TaskItemProps {
   task: Task;

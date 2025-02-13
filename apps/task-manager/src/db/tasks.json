@@ -3,17 +3,17 @@
     "id": "2",
     "title": "Review Frontend Code Changes",
     "description": "Conduct a comprehensive review of recent frontend code modifications, focusing on React components, state management, and performance optimizations.",
-    "status": "In Progress",
+    "status": "Completed",
     "createdAt": "2024-02-11T09:00:00.000Z",
-    "updatedAt": "2025-02-13T01:52:06.309Z"
+    "updatedAt": "2025-02-13T11:33:05.594Z"
   },
   {
     "id": "3",
     "title": "Update API Documentation",
     "description": "Revise and update the existing API documentation to reflect the latest endpoint changes, including new parameters and response structures.",
-    "status": "Incomplete",
+    "status": "Completed",
     "createdAt": "2024-02-09T14:20:00.000Z",
-    "updatedAt": "2025-02-13T04:30:13.590Z"
+    "updatedAt": "2025-02-13T11:32:21.993Z"
   },
   {
     "id": "1739411339342",
@@ -43,9 +43,9 @@
     "id": "6",
     "title": "Create Design System",
     "description": "Develop a comprehensive design system with reusable components, color palette, typography guidelines, and consistent styling across the application.",
-    "status": "Completed",
+    "status": "Incomplete",
     "createdAt": "2024-02-08T16:15:00.000Z",
-    "updatedAt": "2025-02-13T01:52:12.206Z"
+    "updatedAt": "2025-02-13T11:33:08.196Z"
   },
   {
     "id": "7",
@@ -59,8 +59,9 @@
     "id": "8",
     "title": "Performance Audit",
     "description": "Conduct a comprehensive performance audit of the application, identifying bottlenecks, implementing code splitting, and optimizing asset loading.",
-    "status": "Incomplete",
-    "createdAt": "2024-02-06T14:45:00.000Z"
+    "status": "In Progress",
+    "createdAt": "2024-02-06T14:45:00.000Z",
+    "updatedAt": "2025-02-13T11:33:09.693Z"
   },
   {
     "id": "9",
@@ -81,8 +82,8 @@
     "id": "11",
     "title": "Develop Mobile Responsiveness",
     "description": "Enhance the application's responsive design, ensuring seamless user experience across various device sizes and screen resolutions.",
-    "status": "In Progress",
+    "status": "Incomplete",
     "createdAt": "2024-02-03T16:00:00.000Z",
-    "updatedAt": "2025-02-13T01:52:25.983Z"
+    "updatedAt": "2025-02-13T11:32:17.009Z"
   }
 ]

@@ -12,6 +12,7 @@ export async function readTasks(): Promise<Task[]> {
       const content = await fs.readFile(TASKS_FILE, 'utf8');
       return JSON.parse(content);
     } catch (error) {
+      console.error(error);
       await writeTasks([]);
       return [];
     }

@@ -1,6 +1,7 @@
-import { render, screen } from '@testing-library/react';
+import { screen } from '@testing-library/react';
 import { TasksBoard } from '.';
-import { Task } from '@/types/tasks';
+import { Task } from '../../types/tasks';
+import { renderWithQueryClient } from '@/utils/test-utils';
 
 const { getByText, getByRole } = screen;
 
@@ -36,7 +37,7 @@ const tasks: Task[] = [
 
 describe('TasksBoard', () => {
   test('given a set of tasks, renders the tasksboard correctly', () => {
-    render(<TasksBoard tasks={tasks} />);
+    renderWithQueryClient(<TasksBoard tasks={tasks} />);
 
     // Test for task column headers
     expect(
@@ -46,7 +47,7 @@ describe('TasksBoard', () => {
       getByRole('heading', { name: 'In Progress', level: 2 })
     ).toBeInTheDocument();
     expect(
-      getByRole('heading', { name: 'Complete', level: 2 })
+      getByRole('heading', { name: 'Completed', level: 2 })
     ).toBeInTheDocument();
 
     // Test the task items

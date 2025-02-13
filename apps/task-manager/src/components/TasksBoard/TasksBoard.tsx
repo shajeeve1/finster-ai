@@ -1,4 +1,4 @@
-import type { Task } from '@/types/tasks';
+import { Task } from '../../types/tasks';
 import {
   DndContext,
   MouseSensor,
@@ -10,7 +10,7 @@ import {
 } from '@dnd-kit/core';
 import { Box } from '@mui/material';
 import { TasksColumn } from './components/TasksColumn/';
-import { useUpdateTask } from '@/hooks/queries/tasks';
+import { useUpdateTask } from '../../hooks/queries/tasks/useUpdateTask';
 import { TasksContainer } from './styles';
 
 interface TaskBoardProps {

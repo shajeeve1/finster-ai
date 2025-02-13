@@ -1,9 +1,9 @@
 'use client';
 import { AppProvider } from '@toolpad/core/AppProvider';
+import theme from '../../config/mui-theme';
 import { DashboardLayout as ToolpadDashboardLayout } from '@toolpad/core/DashboardLayout';
 import Image from 'next/image';
 import CssBaseline from '@mui/material/CssBaseline';
-import theme from '@/config/mui-theme';
 
 export const navigationItems = [
   {

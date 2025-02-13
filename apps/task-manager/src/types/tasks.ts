@@ -17,3 +17,8 @@ export interface Task {
   updatedAt?: string;
   description?: string;
 }
+
+export interface ApiResponse<T> {
+  success: true;
+  data: T;
+}

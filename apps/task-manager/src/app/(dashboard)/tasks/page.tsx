@@ -1,14 +1,11 @@
 'use client';
 import React, { useState } from 'react';
 import { Typography, Button, Box, styled } from '@mui/material';
-import { useGetAllTasks } from '@/hooks/queries/tasks';
-import { TasksBoard } from '@/components/TasksBoard';
-import { StatsBoard } from '@/components/StatsBoard';
-import {
-  AddTaskModal,
-  TaskFormData,
-} from '@/components/AddTaskModal/AddTaskModal';
-import { useCreateTask } from '@/hooks/queries/tasks';
+import { useGetAllTasks } from '../../../hooks/queries/tasks/useGetAllTasks';
+import { TasksBoard } from '../../../components/TasksBoard/TasksBoard';
+import { StatsBoard } from '../../../components/StatsBoard/StatsBoard';
+import { AddTaskModal, TaskFormData } from '../../../components/AddTaskModal/AddTaskModal';
+import { useCreateTask } from '../../../hooks/queries/tasks/useCreateTask';
 
 const DashboardContainer = styled('div')(({ theme }) => ({
   padding: theme.spacing(4),

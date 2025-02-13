@@ -9,7 +9,7 @@ import {
 } from '@mui/material';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
-import type { Task } from '@/types/tasks';
+import { Task } from '../../types/tasks';
 import { taskSchema } from './schema';
 import { FormInput } from './FormInput';
 import { ModalContainer } from './styles';

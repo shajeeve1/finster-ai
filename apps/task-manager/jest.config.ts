@@ -1,4 +1,4 @@
-export default {
+const config = {
   displayName: 'task-manager',
   preset: '../../jest.preset.js',
   transform: {
@@ -12,3 +12,5 @@ export default {
   },
   setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
 };
+
+export default config;

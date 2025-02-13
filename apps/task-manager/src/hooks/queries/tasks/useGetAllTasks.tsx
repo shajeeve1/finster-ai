@@ -1,10 +1,11 @@
-import type { Task, ApiResponse } from '@/types/tasks';
+import { ApiResponse, Task } from '../../../types/tasks';
 
 import { useQuery } from '@tanstack/react-query';
 import { queryKeys } from './constants';
+import Error from 'next/error';
 
 export const useGetAllTasks = () => {
-  const { data, isLoading, error } = useQuery<ApiResponse<Task[]>>({
+  const { data, isLoading, error } = useQuery<ApiResponse<Task[]>, Error>({
     queryKey: [queryKeys.getAllTasks],
     queryFn: async () => {
       const response = await fetch('/api/tasks');

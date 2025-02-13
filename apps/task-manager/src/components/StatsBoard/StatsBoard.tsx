@@ -1,7 +1,7 @@
 import AssignmentIcon from '@mui/icons-material/Assignment';
 import PendingIcon from '@mui/icons-material/Pending';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
-import type { Task } from '@/types/tasks';
+import { Task } from '../../types/tasks';
 import { IconWrapper, StatBox, StatsContainer } from './styles';
 import { Typography } from '@mui/material';
 

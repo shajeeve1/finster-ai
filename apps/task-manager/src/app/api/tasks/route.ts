@@ -1,5 +1,5 @@
-import { readTasks, writeTasks } from '@/db/tasks';
-import type { Task } from '@/types/tasks';
+import { readTasks, writeTasks } from '../../../db/tasks';
+import { Task } from '../../../types/tasks';
 import { NextResponse } from 'next/server';
 
 export async function GET(): Promise<NextResponse> {
