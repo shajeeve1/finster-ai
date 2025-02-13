@@ -1,7 +1,8 @@
+import React from 'react';
 import { screen } from '@testing-library/react';
 import { TasksBoard } from '.';
 import { Task } from '../../types/tasks';
-import { renderWithQueryClient } from '@/utils/test-utils';
+import { renderWithQueryClient } from '../../utils/test-utils';
 
 const { getByText, getByRole } = screen;
 
