@@ -12,6 +12,8 @@ To run the dev server for your app, use:
 npx nx dev task-manager
 ```
 
+This will take you to the landing page. Once there can navigate to the project management tool by clicking on the cta.
+
 To create a production bundle:
 
 ```sh
