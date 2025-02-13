@@ -1,0 +1,88 @@
+[
+  {
+    "id": "2",
+    "title": "Review Frontend Code Changes",
+    "description": "Conduct a comprehensive review of recent frontend code modifications, focusing on React components, state management, and performance optimizations.",
+    "status": "In Progress",
+    "createdAt": "2024-02-11T09:00:00.000Z",
+    "updatedAt": "2025-02-13T01:52:06.309Z"
+  },
+  {
+    "id": "3",
+    "title": "Update API Documentation",
+    "description": "Revise and update the existing API documentation to reflect the latest endpoint changes, including new parameters and response structures.",
+    "status": "Incomplete",
+    "createdAt": "2024-02-09T14:20:00.000Z",
+    "updatedAt": "2025-02-13T04:30:13.590Z"
+  },
+  {
+    "id": "1739411339342",
+    "title": "Adding new Task",
+    "description": "Implement a robust task creation workflow with comprehensive form validation and error handling.",
+    "status": "Completed",
+    "createdAt": "2025-02-13T01:48:59.342Z",
+    "updatedAt": "2025-02-13T01:52:08.283Z"
+  },
+  {
+    "id": "4",
+    "title": "Optimize Database Queries",
+    "description": "Analyze and refactor existing database queries to improve performance, focusing on reducing query execution time and optimizing index usage.",
+    "status": "In Progress",
+    "createdAt": "2024-02-12T15:45:00.000Z",
+    "updatedAt": "2025-02-13T01:52:10.600Z"
+  },
+  {
+    "id": "5",
+    "title": "Implement User Authentication",
+    "description": "Design and develop a secure user authentication system using OAuth 2.0, including multi-factor authentication and password reset functionality.",
+    "status": "Completed",
+    "createdAt": "2024-02-10T11:30:00.000Z",
+    "updatedAt": "2025-02-13T01:52:16.312Z"
+  },
+  {
+    "id": "6",
+    "title": "Create Design System",
+    "description": "Develop a comprehensive design system with reusable components, color palette, typography guidelines, and consistent styling across the application.",
+    "status": "Completed",
+    "createdAt": "2024-02-08T16:15:00.000Z",
+    "updatedAt": "2025-02-13T01:52:12.206Z"
+  },
+  {
+    "id": "7",
+    "title": "Set Up CI/CD Pipeline",
+    "description": "Configure a continuous integration and continuous deployment pipeline using GitHub Actions, including automated testing, build, and deployment processes.",
+    "status": "In Progress",
+    "createdAt": "2024-02-07T10:00:00.000Z",
+    "updatedAt": "2025-02-13T01:52:13.806Z"
+  },
+  {
+    "id": "8",
+    "title": "Performance Audit",
+    "description": "Conduct a comprehensive performance audit of the application, identifying bottlenecks, implementing code splitting, and optimizing asset loading.",
+    "status": "Incomplete",
+    "createdAt": "2024-02-06T14:45:00.000Z"
+  },
+  {
+    "id": "9",
+    "title": "Implement Error Monitoring",
+    "description": "Set up advanced error monitoring and logging system using tools like Sentry, creating detailed error tracking and alerting mechanisms.",
+    "status": "Incomplete",
+    "createdAt": "2024-02-05T09:30:00.000Z"
+  },
+  {
+    "id": "10",
+    "title": "Refactor State Management",
+    "description": "Restructure the application's state management approach, migrating to a more scalable and maintainable solution with improved context and reducer patterns.",
+    "status": "Incomplete",
+    "createdAt": "2024-02-04T13:15:00.000Z",
+    "updatedAt": "2025-02-13T03:43:08.870Z"
+  },
+  {
+    "id": "11",
+    "title": "Develop Mobile Responsiveness",
+    "description": "Enhance the application's responsive design, ensuring seamless user experience across various device sizes and screen resolutions.",
+    "status": "In Progress",
+    "createdAt": "2024-02-03T16:00:00.000Z",
+    "updatedAt": "2025-02-13T01:52:25.983Z"
+  }
+]

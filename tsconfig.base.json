@@ -14,7 +14,13 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@/*": ["apps/task-manager/src/*"],
+      "@/components/*": ["apps/task-manager/src/components/*"],
+      "@/lib/*": ["apps/task-manager/src/lib/*"],
+      "@/types/*": ["apps/task-manager/src/types/*"],
+      "@/styles/*": ["apps/task-manager/src/styles/*"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
