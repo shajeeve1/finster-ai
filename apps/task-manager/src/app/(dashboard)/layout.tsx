@@ -5,7 +5,7 @@ import { DashboardLayout as ToolpadDashboardLayout } from '@toolpad/core/Dashboa
 import Image from 'next/image';
 import CssBaseline from '@mui/material/CssBaseline';
 
-export const navigationItems = [
+const navigationItems = [
   {
     segment: 'tasks',
     title: 'Tasks',

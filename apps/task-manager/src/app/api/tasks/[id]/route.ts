@@ -1,13 +1,13 @@
 import { readTasks, writeTasks } from '../../../../db/tasks';
 import { Task } from '../../../../types/tasks';
-import { NextResponse } from 'next/server';
+import { NextRequest, NextResponse } from 'next/server';
 
 export async function PUT(
   request: Request,
-  context: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ): Promise<NextResponse> {
   try {
-    const { id } = await context.params;
+    const { id } = await params;
 
     const { status } = await request.json();
     const tasks: Task[] = await readTasks();
@@ -45,10 +45,10 @@ export async function PUT(
 
 export async function DELETE(
   _request: Request,
-  context: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ): Promise<NextResponse> {
   try {
-    const { id } = await context.params;
+    const { id } = await params;
     const tasks: Task[] = await readTasks();
     const taskIndex = tasks.findIndex((task) => task.id === id);
 

@@ -34,8 +34,9 @@
     "**/*.jsx",
     "**/*.ts",
     "**/*.tsx",
+    ".next/types/**/*.ts",
     "next-env.d.ts",
-    ".next/types/**/*.ts"
+    "../../dist/apps/task-manager/.next/types/**/*.ts"
   ],
   "exclude": [
     ".next/types/**/*.ts",
