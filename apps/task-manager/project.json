@@ -3,7 +3,41 @@
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "apps/task-manager",
   "projectType": "application",
-  "tags": [],
-  "// targets": "to see all targets run: nx show project task-manager --web",
-  "targets": {}
+  "targets": {
+    "build": {
+      "executor": "@nx/next:build",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "outputPath": "dist/apps/task-manager"
+      },
+      "configurations": {
+        "development": {
+          "outputPath": "apps/task-manager"
+        },
+        "production": {
+          "outputPath": "dist/apps/task-manager"
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nx/next:server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "task-manager:build",
+        "dev": true
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "task-manager:build:development",
+          "dev": true
+        },
+        "production": {
+          "buildTarget": "task-manager:build:production",
+          "dev": false
+        }
+      }
+    }
+  },
+  "tags": []
 }
