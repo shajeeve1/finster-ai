@@ -7,7 +7,7 @@
     "build": {
       "executor": "@nx/next:build",
       "outputs": ["{options.outputPath}"],
-      "defaultConfiguration": "production",
+  "defaultConfiguration": "production",
       "options": {
         "outputPath": "dist/apps/task-manager"
       },
@@ -36,8 +36,8 @@
           "buildTarget": "task-manager:build:production",
           "dev": false
         }
-      }
-    }
+}
+}
   },
   "tags": []
 }

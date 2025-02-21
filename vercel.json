@@ -1,0 +1,7 @@
+{
+    "version": 2,
+    "buildCommand": "npx nx build task-manager",
+    "outputDirectory": "dist/apps/task-manager",
+    "installCommand": "npm install",
+    "framework": "nextjs"
+  }

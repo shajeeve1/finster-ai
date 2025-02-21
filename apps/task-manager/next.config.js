@@ -9,12 +9,9 @@ const nextConfig = {
   nx: {
     svgr: false,
   },
-  output: 'export', // Enable static exports
   images: {
-    unoptimized: true, // Required for static export
+    unoptimized: true,
   },
-  // Optional: Add basePath if you're not using a custom domain
-  // basePath: '/your-repo-name',
   webpack: (config) => {
     config.resolve.alias = {
       ...config.resolve.alias,
