@@ -35,6 +35,23 @@ jobs:
         run: npm ci --legacy-peer-deps
       - name: Build
         run: npx nx build task-manager --configuration=production
+      - name: Debug Vercel Tokens
+        run: |
+          if [ -n "${{ secrets.VERCEL_TOKEN }}" ]; then
+            echo "✓ VERCEL_TOKEN is set"
+          else
+            echo "✗ VERCEL_TOKEN is missing"
+          fi
+          if [ -n "${{ secrets.VERCEL_ORG_ID }}" ]; then
+            echo "✓ VERCEL_ORG_ID is set"
+          else
+            echo "✗ VERCEL_ORG_ID is missing"
+          fi
+          if [ -n "${{ secrets.VERCEL_PROJECT_ID }}" ]; then
+            echo "✓ VERCEL_PROJECT_ID is set"
+          else
+            echo "✗ VERCEL_PROJECT_ID is missing"
+          fi
       - name: Deploy to Vercel
         uses: amondnet/vercel-action@v20
         with:
