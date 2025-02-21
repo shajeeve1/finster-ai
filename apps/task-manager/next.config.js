@@ -1,4 +1,3 @@
-// apps/task-manager/next.config.js
 const { composePlugins, withNx } = require('@nx/next');
 const path = require('path');
 
@@ -12,6 +11,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  output: 'standalone',
   webpack: (config) => {
     config.resolve.alias = {
       ...config.resolve.alias,
@@ -20,10 +20,6 @@ const nextConfig = {
       '@/lib': path.resolve(__dirname, './src/lib'),
       '@/styles': path.resolve(__dirname, './src/styles'),
       '@/types': path.resolve(__dirname, './src/types'),
-      '@finster-ai/ui-components': path.resolve(
-        __dirname,
-        '../../libs/shared/ui-components/src/index.ts'
-      ),
     };
     return config;
   },
