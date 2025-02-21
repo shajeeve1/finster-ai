@@ -11,6 +11,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  distDir: '.next',
   output: 'standalone',
   webpack: (config) => {
     config.resolve.alias = {

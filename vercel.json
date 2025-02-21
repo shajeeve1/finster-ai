@@ -1,7 +1,7 @@
 {
     "version": 2,
     "buildCommand": "npx nx build task-manager --prod",
-    "outputDirectory": "dist/apps/task-manager",
+    "outputDirectory": "dist/apps/task-manager/.next",
     "installCommand": "npm install --legacy-peer-deps",
     "framework": "nextjs"
 }
