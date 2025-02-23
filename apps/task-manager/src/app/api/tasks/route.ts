@@ -1,6 +1,6 @@
 import { readTasks, writeTasks } from '../../../db/tasks';
 import { Task } from '../../../types/tasks';
-import { NextResponse } from 'next/server';
+import { NextRequest, NextResponse } from 'next/server';
 
 export async function GET(): Promise<NextResponse> {
   try {
@@ -24,7 +24,7 @@ export async function GET(): Promise<NextResponse> {
   }
 }
 
-export async function POST(request: Request): Promise<NextResponse> {
+export async function POST(request: NextRequest): Promise<NextResponse> {
   try {
     const body = await request.json();
     const { title, description } = body;
